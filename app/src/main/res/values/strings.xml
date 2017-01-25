@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Profile</string>
+    <string name="page_title">Zara Lundholm</string>
+    <string name="photo_number">120</string>
+    <string name="photo_name">Photos</string>
+    <string name="followers_number">300</string>
+    <string name="followers_title">Followers</string>
+    <string name="follows_number">30</string>
+    <string name="follows_title">Follows</string>
+    <string name="photo_place">Madrid, Spain</string>
+    <string name="photo_title">In my favorite restaurant</string>
+    <string name="fa_heart">&#xf004;</string>
+    <string name="fa_comment">&#xf075;</string>
+    <string name="profile_view_description">My profile view. Here I add my personal photo</string>
+
+    <string name="photo_place2">Isla de Margarita, Venezuela</string>
+    <string name="photo_title2">Relax and piña colada</string>
+
+
+</resources>

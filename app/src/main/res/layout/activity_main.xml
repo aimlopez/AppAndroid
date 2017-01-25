@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.aimaralopez.myprofile.MainActivity">
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="@string/page_title"
+        />
+
+    <ImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/woman_062"
+        android:layout_margin="24sp"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/profile_view_description"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/profile_photo"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/gen_info"
+        >
+        <RelativeLayout
+            android:id="@+id/myphotos_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/photos_number"
+                style="@style/mainBox"
+                android:text="@string/photo_number"
+                android:paddingTop="8dp"
+                />
+            <TextView
+                style="@style/mainBox"
+                android:text="@string/photo_name"
+                android:layout_below="@id/photos_number"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/followers_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/main_number2"
+                style="@style/mainBox"
+                android:paddingTop="8dp"
+                android:text="@string/followers_number"
+               />
+            <TextView
+                style="@style/mainBox"
+                android:text="@string/followers_title"
+                android:layout_below="@id/main_number2"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/follows_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/main_number3"
+                android:paddingTop="8dp"
+                style="@style/mainBox"
+                android:text="@string/follows_number"
+                />
+            <TextView
+                style="@style/mainBox"
+                android:text="@string/follows_title"
+                android:layout_below="@id/main_number3"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/gen_info"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/photo_gallery"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/photoLoop_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/photo1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/food"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/photo_place"
+                style="@style/mainBox.photos"
+                android:text="@string/photo_place"
+                />
+
+            <TextView
+                style="@style/mainBox.photos"
+                android:id="@+id/textView"
+                android:text="@string/photo_title"
+                android:layout_alignBottom="@id/photo1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/blackTransp"
+             />
+
+            <TextView
+                android:id="@+id/comment_button"
+                style="@style/mainBox.photos"
+                android:text="@string/fa_heart"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="32sp"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/like_button"
+                style="@style/mainBox.photos"
+                android:text="@string/fa_heart"
+                android:layout_toLeftOf="@id/comment_button"
+                android:layout_toStartOf="@id/comment_button"
+                android:textSize="32sp"
+                android:scaleType="centerCrop"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photoLoop_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        >
+
+            <ImageView
+                android:id="@+id/photo2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/nature"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/photo_place2"
+                style="@style/mainBox.photos"
+                android:text="@string/photo_place2"
+
+                />
+
+            <TextView
+                style="@style/mainBox.photos"
+                android:text="@string/photo_title2"
+                android:id="@+id/textView2"
+                android:layout_alignBottom="@id/photo2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/blackTransp"
+            />
+            <TextView
+                android:id="@+id/comment_button2"
+                style="@style/mainBox.photos"
+                android:text="@string/fa_heart"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="32sp"
+
+                />
+            <TextView
+                android:id="@+id/like_button2"
+                style="@style/mainBox.photos"
+                android:text="@string/fa_heart"
+                android:layout_toLeftOf="@id/comment_button2"
+                android:layout_toStartOf="@id/comment_button2"
+                android:textSize="32sp"
+
+            />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
